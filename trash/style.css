@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: arial;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    position: fixed;
+    z-index: 99;
+}
+.logo.a{
+    color:#fff
+    margin-left: 50px;
+    text-transform: uppercase;
+}
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul li a{
+    flex: 1;
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+header ul li a:hover{
+    transition: 0.5s ease-in-out;
+    color: grey;
+}
+header.hamburger{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    appearance: none;
+    background: none;
+    outline: none;
+}
+.hamburger.bar, .hamburger::after, .hamburger::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    margin: 6 0px;
+    transition: none;
+}

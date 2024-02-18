@@ -1,0 +1,53 @@
+.topnav{
+    display: flex;
+    padding-block: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+.links{
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+.menu{
+    display: flex;
+    margin: 0;
+    align-items: center;
+    padding: 0;
+    gap:1rem;
+}
+button{
+    background: none;
+    border: none;
+    padding: 0;
+    color: white;
+}
+.close{
+    display: block;
+    margin-inline-start: auto;
+    margin-block-end: 8rem;
+}
+@media (max-width:480px) {
+    .burg{
+        position: fixed;
+        inset: 0;
+        padding: 1.5rem;
+        background-color: rgb(96, 84, 84);
+        translate: 100vw 0;
+        transition: translate 0.5s ease-in;
+    }
+    .menu{
+        flex-direction: column;
+    }
+}
+@media (min-width:480px){
+    button{
+        display: none;
+    }
+}
+.button.open[aria-expanded="true"]{
+    .burg{
+        translate: 0;
+    }
+}
